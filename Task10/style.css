@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* 👈 This adds space between the two items */
+  border: 2px solid #000; /* Optional: adds a frame */
+  padding: 10px;
+}
+
+
+
+.left-img img {
+  height: 150px;
+  
+}
+
+.right-box {
+  width: 150px;
+  height: 150px;
+  background-color: #00bfff;
+  /* Removed gap here — not valid in a single element */
+}
+
+
+/* Second Section: Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: pink;
+  padding: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.grid-box {
+  background-color: gray;
+  padding: 10px;
+}
+
+.grid-box img {
+  width: 100%;
+  display: block;
+}

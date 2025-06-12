@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frog Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      border: 2px solid black;
+    }
+
+    .top-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .top-table td {
+      border: 1px solid black;
+      height: 40px;
+    }
+
+    .top-table td.middle-cell {
+      height: auto;
+    }
+
+    .green-bar {
+      background-color: #5c6e3d;
+      height: 40px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    .content {
+      display: flex;
+      border-bottom: 2px solid black;
+    }
+
+    .sidebar {
+      width: 20%;
+      border-right: 2px solid black;
+      min-height: 400px;
+    }
+
+    .main-content {
+      width: 60%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .sidebar-right {
+      width: 20%;
+      border-left: 2px solid black;
+    }
+
+    .blue-bar {
+      background-color: #1f2f57;
+      height: 40px;
+      border-top: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <table class="top-table">
+    <tr>
+      <td style="width: 20%;"></td>
+      <td style="width: 60%;"></td>
+      <td style="width: 20%;"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="middle-cell">
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr><td style="border: 1px solid black; height: 30px;"></td></tr>
+          <tr><td style="border: 1px solid black; height: 30px;"></td></tr>
+          <tr><td style="border: 1px solid black; height: 30px;"></td></tr>
+        </table>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+
+ 
+  <div class="green-bar"></div>
+
+ 
+  <div class="content">
+    <div class="sidebar"></div>
+    <div class="main-content">
+      <img src="https://www.brilliant-creation.org/fileadmin/naturephotos/6/others/blue_poison_dart_frog.jpg" alt="Blue Frog">
+    </div>
+    <div class="sidebar-right"></div>
+  </div>
+
+  <div class="blue-bar"></div>
+</div>
+
+</body>
+</html>
